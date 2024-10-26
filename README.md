@@ -1,0 +1,1 @@
+The **Reservation Hotel project** is a Spring Boot application designed to manage hotel reservations. It provides functionalities for managing reservations, rooms, user information, and user roles. The application uses JWT for authentication and authorization, ensuring secure access to its resources.
