@@ -16,12 +16,23 @@ public class ReservationServiceImpl implements ReservationService {
 
     @Override
     public Reservation saveReservation(Reservation reservationRequest) {
-        // Check if reservation exists
-        Reservation reservationByReservationId = reservationRepository
-                .findByReservationId(reservationRequest.getReservationId());
-        if (reservationByReservationId != null) {
-            throw new RuntimeException("Reservation already exists..!!");
+        // Get reservationId as String
+        String reservationIdString = reservationRequest.getReservationId(); // Assuming this returns a String
+
+        // Convert String to Long and check if reservation exists
+        try {
+            Long reservationId = Long.parseLong(reservationIdString); // Convert String to Long
+            Reservation existingReservation = reservationRepository.findByReservationId(reservationId);
+            if (existingReservation != null) {
+                throw new RuntimeException("Reservation already exists..!!");
+            }
+        } catch (NumberFormatException e) {
+            // Handle invalid format for reservation ID
+            System.out.println("Invalid reservation ID format: " + reservationIdString);
+            throw new RuntimeException("Invalid reservation ID format: " + reservationIdString);
         }
+
+        // Save the new reservation
         return reservationRepository.save(reservationRequest);
     }
 
@@ -38,9 +49,8 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     public Reservation updateReservation(Reservation reservation) {
         // Check if reservation exists
-        Reservation reservationByReservationId = reservationRepository
-                .findByReservationId(reservation.getReservationId());
-        if (reservationByReservationId == null) {
+        Reservation existingReservation = reservationRepository.findByReservationId(reservation.getReservationId());
+        if (existingReservation == null) {
             throw new RuntimeException("Reservation not found..!!");
         }
         return reservationRepository.save(reservation);
@@ -55,5 +65,4 @@ public class ReservationServiceImpl implements ReservationService {
     public List<Reservation> getAllReservations() {
         return reservationRepository.findAll();
     }
-
 }

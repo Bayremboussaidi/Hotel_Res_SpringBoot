@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.fady.hotel.Dto.RoomSearchDTO;
-import com.fady.hotel.Entity.Room;
-import com.fady.hotel.Repository.RoomRepository;
-import com.fady.hotel.Service.Interface.RoomService;
+import com.example.hotel.Dto.RoomSearchDTO;
+import com.example.hotel.Entity.Room;
+import com.example.hotel.Repository.RoomRepository;
+import com.example.hotel.Service.Interface.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

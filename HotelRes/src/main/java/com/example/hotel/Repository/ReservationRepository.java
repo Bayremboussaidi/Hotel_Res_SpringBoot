@@ -11,7 +11,7 @@ import com.example.hotel.Entity.Reservation;
 
 @Repository
 public interface ReservationRepository extends JpaRepository<Reservation, Long> {
-    public Reservation findByReservationId(Long reservationId);
+    public Reservation findByReservationId(String string);
 
     @Query("SELECT r FROM Reservation r WHERE r.room.id = ?1")
     public List<Reservation> findByRoom(String id);

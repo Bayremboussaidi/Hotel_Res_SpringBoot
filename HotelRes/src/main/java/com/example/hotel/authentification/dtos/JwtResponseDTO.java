@@ -1,4 +1,4 @@
-package com.fady.hotel.authentification.dtos;
+package com.example.hotel.authentification.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

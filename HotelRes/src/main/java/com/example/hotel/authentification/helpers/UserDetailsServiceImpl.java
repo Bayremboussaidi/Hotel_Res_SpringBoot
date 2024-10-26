@@ -1,7 +1,4 @@
-package com.fady.hotel.authentification.helpers;
-
-import com.fady.hotel.Entity.UserInfo;
-import com.fady.hotel.Repository.UserRepository;
+package com.example.hotel.authentification.helpers;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +7,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
+
+import com.example.hotel.Entity.UserInfo;
+import com.example.hotel.Repository.UserRepository;
 
 @Component
 public class UserDetailsServiceImpl implements UserDetailsService {

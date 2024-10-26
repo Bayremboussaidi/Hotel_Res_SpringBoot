@@ -1,10 +1,11 @@
 package com.example.hotel.Service;
 
-import com.fady.hotel.Entity.UserInfo;
-import com.fady.hotel.Dto.UserRequest;
-import com.fady.hotel.Dto.UserResponse;
-import com.fady.hotel.Repository.UserRepository;
-import com.fady.hotel.Service.Interface.UserService;
+import com.example.hotel.Entity.UserInfo;
+import com.example.hotel.Dto.UserRequest;
+import com.example.hotel.Dto.userResponse;
+import com.example.hotel.Repository.UserRepository;
+import com.example.hotel.Service.Interface.UserService;
+
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +17,8 @@ import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Type;
 import java.util.List;
+
+import com.example.hotel.Dto.UserResponse;
 
 @Service
 public class UserServiceImpl implements UserService {

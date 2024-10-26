@@ -1,15 +1,15 @@
-package com.fady.hotel.authentification.helpers;
-
-import com.fady.hotel.Entity.UserInfo;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
-
-import com.fady.hotel.Entity.UserRole;
+package com.example.hotel.authentification.helpers;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.example.hotel.Entity.UserInfo;
+import com.example.hotel.Entity.UserRole;
 
 public class CustomUserDetails extends UserInfo implements UserDetails {
 

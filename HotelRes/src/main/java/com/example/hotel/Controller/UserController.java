@@ -1,12 +1,10 @@
 package com.example.hotel.Controller;
 
 import com.example.hotel.Service.JwtService;
-import com.example.hotel.authentification.dtos.AuthRequestDTO;
-import com.fady.hotel.authentification.dtos.JwtResponseDTO;
-import com.fady.hotel.Service.Interface.UserService;
-import com.fady.hotel.Dto.UserAuthRequest;
-import com.fady.hotel.Dto.UserRequest;
-import com.fady.hotel.Dto.UserResponse;
+import com.example.hotel.Service.Interface.UserService;
+import com.example.hotel.Dto.UserAuthRequest;
+import com.example.hotel.Dto.UserRequest;
+import com.example.hotel.Dto.UserResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

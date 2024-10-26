@@ -1,4 +1,4 @@
-package com.fady.hotel.Dto;
+package com.example.hotel.Dto;
 
 import java.util.Date;
 
