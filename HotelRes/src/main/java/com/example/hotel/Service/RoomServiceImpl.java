@@ -1,4 +1,4 @@
-package com.fady.hotel.Service;
+package com.example.hotel.Service;
 
 import java.util.ArrayList;
 import java.util.List;

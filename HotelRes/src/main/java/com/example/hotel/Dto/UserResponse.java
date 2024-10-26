@@ -1,13 +1,13 @@
-package com.fady.hotel.Dto;
+package com.example.hotel.Dto;
+
+import java.util.Set;
+
+import com.example.hotel.Entity.UserRole;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-
-import java.util.Set;
-
-import com.fady.hotel.Entity.UserRole;
 
 @Data
 @AllArgsConstructor

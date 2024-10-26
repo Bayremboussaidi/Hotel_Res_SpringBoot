@@ -1,8 +1,9 @@
-package com.fady.hotel.Repository;
+package com.example.hotel.Repository;
 
-import com.fady.hotel.Entity.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import com.example.hotel.Entity.UserInfo;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserInfo, Long> {

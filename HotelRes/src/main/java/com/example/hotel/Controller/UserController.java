@@ -1,7 +1,7 @@
-package com.fady.hotel.Controller;
+package com.example.hotel.Controller;
 
-import com.fady.hotel.Service.JwtService;
-import com.fady.hotel.authentification.dtos.AuthRequestDTO;
+import com.example.hotel.Service.JwtService;
+import com.example.hotel.authentification.dtos.AuthRequestDTO;
 import com.fady.hotel.authentification.dtos.JwtResponseDTO;
 import com.fady.hotel.Service.Interface.UserService;
 import com.fady.hotel.Dto.UserAuthRequest;

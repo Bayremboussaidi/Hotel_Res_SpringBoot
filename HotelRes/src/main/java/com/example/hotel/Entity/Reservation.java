@@ -1,41 +1,33 @@
-package com.fady.hotel.Entity;
+package com.example.hotel.Entity;
 
 import java.util.Date;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-@Entity
+@Document(collection = "reservations") // Specify the MongoDB collection name
 @Data
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Reservation {
     @Id
-    @GeneratedValue
-    private Long reservationId;
-    @Temporal(TemporalType.TIMESTAMP)
+    private String reservationId; // Change to String for MongoDB ObjectId
+
     private Date reservationDate;
-    @Temporal(TemporalType.DATE)
     private Date checkInDate;
-    @Temporal(TemporalType.DATE)
     private Date checkOutDate;
 
-    @ManyToOne
-    @JoinColumn(name = "room_id", nullable = false)
+    //IDeref(lazy = true) // Use DBRef for referencing another document (Room)
     private Room room;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
+    @DBRef(lazy = true) // Use DBRef for referencing another document (UserInfo)
     private UserInfo user;
 
     private String reservationStatus;
@@ -44,7 +36,5 @@ public class Reservation {
     private float reservationPrice;
     private String reservationPaymentMethod;
     private String reservationPaymentStatus;
-    @Temporal(TemporalType.TIMESTAMP)
     private Date reservationPaymentDate;
-
 }

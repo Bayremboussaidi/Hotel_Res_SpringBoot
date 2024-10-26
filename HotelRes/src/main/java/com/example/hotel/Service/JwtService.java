@@ -1,4 +1,4 @@
-package com.fady.hotel.Service;
+package com.example.hotel.Service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,9 +1,10 @@
-package com.fady.hotel.Dto;
+package com.example.hotel.Dto;
+
 
 import java.util.Date;
 
-import com.fady.hotel.Entity.Room;
-import com.fady.hotel.Entity.UserInfo;
+import com.example.hotel.Entity.Room;
+import com.example.hotel.Entity.UserInfo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

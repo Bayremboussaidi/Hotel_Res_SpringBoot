@@ -1,4 +1,4 @@
-package com.fady.hotel.Service;
+package com.example.hotel.Service;
 
 import com.fady.hotel.Entity.UserInfo;
 import com.fady.hotel.Dto.UserRequest;

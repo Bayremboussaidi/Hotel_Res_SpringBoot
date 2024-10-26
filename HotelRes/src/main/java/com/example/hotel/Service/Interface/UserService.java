@@ -1,9 +1,9 @@
-package com.fady.hotel.Service.Interface;
+package com.example.hotel.Service.Interface;
 
 import java.util.List;
 
-import com.fady.hotel.Dto.UserRequest;
-import com.fady.hotel.Dto.UserResponse;
+import com.example.hotel.Dto.UserRequest;
+import com.example.hotel.Dto.UserResponse;
 
 public interface UserService {
 

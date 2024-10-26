@@ -1,10 +1,10 @@
-package com.fady.hotel.Service;
+package com.example.hotel.Service;
 
 import java.util.List;
 
-import com.fady.hotel.Entity.Reservation;
-import com.fady.hotel.Repository.ReservationRepository;
-import com.fady.hotel.Service.Interface.ReservationService;
+import com.example.hotel.Entity.Reservation;
+import com.example.hotel.Repository.ReservationRepository;
+import com.example.hotel.Service.Interface.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
